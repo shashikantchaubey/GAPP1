@@ -1,0 +1,61 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1, footer p {
+    text-align: center;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.content, .resources, .courses {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.resources ul, .courses p {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resources ul li, .courses p a {
+    margin-bottom: 10px;
+}
+
+.resources ul li a, .courses p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.resources ul li a:hover, .courses p a:hover {
+    color: #0056b3;
+}

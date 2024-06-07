@@ -1,0 +1,155 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #192e3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    width: 125%; /* Adjust the width to counteract the scaling */
+    height: 125%; /* Adjust the height if necessary */
+    margin: 0;
+}
+
+.quiz-container {
+    background: #e1e1de;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#question-container{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+    
+}
+
+#question{
+    padding: 3.5rem;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.next-btn {
+    background-color: #28a745;
+}
+
+.next-btn:hover {
+    background-color: #218838;
+} */
+
+
+/* .btn {
+    display: inline-block;
+    
+    padding: .9rem 1.9rem;
+    color: #fff !important;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+} */
+
+.next-btn {
+    display: inline-block;
+    /* margin-top: 2.5rem; */
+    padding: .9rem 1.9rem;
+    color:#147c62;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.next-btn:hover{
+    color: #fff;
+}
+
+.btn{
+    display: inline-block;
+    /* margin-top: 2.5rem; */
+    padding: .9rem 1.9rem;
+    background-color:#EAF2D3;
+    border-radius: 16px;
+    color: #0A5C48;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 1.3rem;
+    transition: 0.3s;
+  
+}
+  
+.btn:hover{
+    background-color: #0c6f57;
+    transform: scale(1);
+    color: #EAF2D3;
+    cursor: pointer;
+}
+
+.score-final{
+    /* background: white; */
+    background: #e1e1de;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    font-weight: 800;
+    font-size: 1.5rem;
+
+}
+
+#score, #final-score {
+    /* height: 100px; */
+    margin-top: 20px;
+    /* background-color:#EAF2D3 ; */
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.wrong {
+    background-color: #dc3545;
+}

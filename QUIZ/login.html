@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Example</title>
+    <style>
+        /* Styles for the login popup */
+        #loginPopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Login button -->
+<button onclick="showLoginPopup()">Login</button>
+
+<!-- Login popup -->
+<div id="loginPopup">
+    <h2>Login</h2>
+    <form onsubmit="return handleLogin()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    // Function to show the login popup
+    function showLoginPopup() {
+        document.getElementById("loginPopup").style.display = "block";
+    }
+
+    // Function to handle login
+    function handleLogin() {
+        // Perform login logic here
+        // For simplicity, let's just update the login button text with a hardcoded name
+        var username = document.getElementById("username").value;
+        document.getElementById("loginPopup").style.display = "none";
+        document.querySelector('button').textContent = username;
+        
+        // Prevent form submission (we don't want the page to refresh)
+        return false;
+    }
+</script>
+
+</body>
+</html>

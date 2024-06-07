@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz2.css ">
+    <!-- <link rel="stylesheet" href="style.css "> -->
+</head>
+<body>
+    <div class="container"> 
+      <!-- Start Screen  -->
+        <div class="start-screen ">
+            <h1 class="heading">Quiz</h1>
+            <div class="settings">
+                <label for="num-questions">Number of Questions</label> 
+                <select name="" id="num-questions">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                </select>
+                <label for="category">Select Categories</label> 
+                <select name="" id="num@questions">
+                    <option value="5">Any Catergories</option>
+                    <option value="10">Ratio and Proportion</option>
+                    <option value="15">Mensuration</option>
+                    <option value="20">Trignometry</option>
+                    <option value="25">Probability</option>
+                    <option value="30">SI and CI</option>
+                    <option value="30"> Relationships</option>
+                    <option value="30">Algorithms</option>
+
+
+
+
+
+
+
+
+
+              
+                </select>
+                <label for="difficulty">Select Difficulty</label> 
+                <select name="" id="difficulty">
+                    <option value="5">Any Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <label for="time"> Select the time per question</label>
+                <select name = "" id = "time">
+                  <option value="10">10 seconds</option>
+                  <option value="15">15 seconds</option>
+                  <option value="20">20 seconds</option>
+                  <option value="25">25 seconds</option>
+                  <option value="30">30 seconds</option>
+                  <option value="60">60 seconds</option>
+                </select>
+              </div>
+              <button class = "btn start"> Start Quiz</button>
+            </div>
+
+            <!-- // quiz Screen -->
+            <div class="quiz hide ">
+              <div class="timer">
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                  <span class="progress-text">50</span>
+                </div>
+              </div>
+              <div class="question-wrapper">
+                <div class="number">
+                  Question <span class="current">1</span>
+                  <span class="total">/10</span>
+            </div>
+            <div class="question">Worst time complexity of Merge Sort ? </div>
+          </div>
+            <div class="answer-wrapper">
+              <div class="answer selected">
+                <span class="text">log n</span>
+                <span class="checkbox">
+                  <span class="icon">✔</span>
+                </span>
+              </div>
+              <div class="answer correct">
+                <span class="text">n*log n</span>
+                <span class="checkbox">
+                  <span class="icon">✔</span>
+                </span>
+              </div>
+              <div class="answer wrong ">
+                <span class="text">n^2</span>
+                <span class="checkbox">
+                  <span class="icon">✔</span>
+                </span>
+              </div>
+            </div>
+          <button class="btn submit" disabled>Submit</button>
+          <button class="btn next">Next</button>
+        </div>
+
+        <!-- result Screen -->
+        <div class="end-screen hide ">
+          <h1 class="heading">Quiz App</h1>
+          <div class="score">
+            <span class="score-text">Your Score: </span>
+            <div>
+              <span class="final-score">0</span>
+              <span class="total-score">/10</span>
+          </div>
+          <button class="btn restart">Restart Quiz</button>
+        </div>
+    </div>
+  </div>
+
+  <script src = "quiz2.js"></script>
+</body>
+</html>
